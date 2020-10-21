@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(82, 86, 89);
+}
+
+
+/* Style the header */
+
+.header {
+    margin-top: 10px rgb;
+    background-image: url('../img/banner-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20% 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 90px;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header p {
+    font-size: 40px;
+    color: white;
+}
+
+
+/ Ejemplo de estilos por clase /
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 0 20% 0 20%;
+    /Si son 4 es arriba derecha abajo izquierda, si son 2 son arriba/abajo y derecha/izquierda/
+}
+
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+}
+
+.cadelblue {
+    background-color: cadetblue;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    /Si son 4 es arriba derecha abajo izquierda, si son 2 son arriba/abajo y derecha/izquierda/
+}
+
+.three-column {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.three-column img {
+    width: 100%;
+}
+
+.three-column .desc {
+    padding: 10px;
+    text-align: center;
+}
+
+.four-column {
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+#footer-a {
+    background-color: #21252995;
+}
+
+#footer-a p {
+    color: white;
+}
+
+#footer-b {
+    background-color: #212529;
+    text-align: center;
+    color: white;
+    padding: 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/ Clear floats after the columns /
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/ Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .two-column,
+    .four-column {
+        width: 100%;
+    }
+}
